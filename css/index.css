@@ -150,6 +150,10 @@ body {
     width: 100%;
   }
 }
+.container .box-flex {
+  display: flex;
+  justify-content: space-between;
+}
 .container header {
   background-color: lightblue;
 }
