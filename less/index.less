@@ -54,6 +54,168 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
+}
+
+@h2font: sans-serif;
+@bgcolor: #e5e5e5;
+@contentfont: snell;
+
+.container{
+	margin: 2em;
+	padding: 2em;
+
+.boxes-dim{
+	width:48%;
+	height:50%;
+	font-size:3em;
+	font-family: @contentfont;
+
+	@media (max-width: 500px){
+	width: 100%;
+	}
+}
+
+
+	header{
+		background-color: lightblue;
+		
+		nav{
+			display: flex;
+			justify-content:flex-end;
+			
+			@media (max-width:500px){
+				flex-direction:column;
+				align-items: center;
+				
+			}
+			
+			a {
+				text-decoration: none;
+				color: Black;
+				font-size: 2rem;
+				padding: 0px 10px 0px 0px;
+				font-family: helvetica;
+
+				@media (max-width:500px){
+					border-top: 1px solid black;
+					width: 100%;
+					text-align: center;
+					
+				}
+			}
+		}
+	}
+
+	h2{
+		font-size: 2rem;
+		font-family: @h2font;
+	}
+
+	.big-box{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: @bgcolor ;
+		width: 100%;
+		height: 50rem;
+		padding: 3rem;
+
+			img{
+				height: auto;
+				width: 40%;
+			}
+
+			h1{
+				font-size: 4rem;
+				font-family: @h2font;
+
+				@media (max-width:500px){
+					font-size: 3rem;
+				}
+			}
+
+			p{
+				font-size: 2rem;
+			}
+
+			button{
+				width: 100px;
+				height: 40px;
+				background-color: gray;
+			}
+			
+		button:hover{
+			text-decoration:underline;
+			color: red;
+
+		@media (max-width: 500px){
+			
+		}
+		}
+	}
+
+	
+			
+	.middle{
+		display:flex;
+		justify-content: space-between;
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+		}
+	}
+
+
+	.intro{
+		.boxes-dim();
+		background-color: @bgcolor;
+		padding: 3rem;
+		margin: 20px 0px 0px 0px;
+	}
+
+	.list {
+		.boxes-dim();
+		background-color: @bgcolor;
+		padding: 3rem;
+		height: auto;
+		margin: 20px 0px 0px 0px;
+	}
+
+	ul{
+		list-style-type:circle;
+		list-style-position: inside;
+	}
+
+	.lower{
+		display:flex;
+		justify-content: space-between;
+		height: auto;
+		padding: 20px 0px 0px 0px;
+		
+
+		@media (max-width: 500px){
+			flex-wrap: wrap;
+			align-content:space-between;
+		}
+			
+		.history {
+			.boxes-dim();
+			background-color:@bgcolor;
+			padding: 3rem;
+		}
+
+		.contact {
+			.boxes-dim();
+			background-color:@bgcolor;
+			padding: 3rem;
+			height: auto;
+
+			@media (max-width: 500px){
+				margin: 20px 0px 0px 0px;
+			}
+		}	
+	}
 }
 
