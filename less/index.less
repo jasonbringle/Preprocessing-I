@@ -68,8 +68,8 @@ html, body {
 
 .boxes-dim{
 	width:48%;
-	height:50%;
-	font-size:3em;
+	height:auto;
+	font-size:2em;
 	font-family: @contentfont;
 
 	@media (max-width: 500px){
@@ -182,7 +182,6 @@ html, body {
 		.boxes-dim();
 		background-color: @bgcolor;
 		padding: 3rem;
-		height: auto;
 		margin: 20px 0px 0px 0px;
 	}
 
@@ -193,7 +192,6 @@ html, body {
 
 	.lower{
 		.box-flex();
-		height: auto;
 		padding: 20px 0px 0px 0px;
 		
 
@@ -206,13 +204,16 @@ html, body {
 			.boxes-dim();
 			background-color:@bgcolor;
 			padding: 3rem;
+
+			span{
+				font-style: italic;
+			}
 		}
 
 		.contact {
 			.boxes-dim();
 			background-color:@bgcolor;
 			padding: 3rem;
-			height: auto;
 
 			@media (max-width: 500px){
 				margin: 20px 0px 0px 0px;

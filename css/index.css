@@ -141,8 +141,8 @@ body {
 }
 .container .boxes-dim {
   width: 48%;
-  height: 50%;
-  font-size: 3em;
+  height: auto;
+  font-size: 2em;
   font-family: snell;
 }
 @media (max-width: 500px) {
@@ -230,8 +230,8 @@ body {
 }
 .container .intro {
   width: 48%;
-  height: 50%;
-  font-size: 3em;
+  height: auto;
+  font-size: 2em;
   font-family: snell;
   background-color: #e5e5e5;
   padding: 3rem;
@@ -244,12 +244,11 @@ body {
 }
 .container .list {
   width: 48%;
-  height: 50%;
-  font-size: 3em;
+  height: auto;
+  font-size: 2em;
   font-family: snell;
   background-color: #e5e5e5;
   padding: 3rem;
-  height: auto;
   margin: 20px 0px 0px 0px;
 }
 @media (max-width: 500px) {
@@ -264,7 +263,6 @@ body {
 .container .lower {
   display: flex;
   justify-content: space-between;
-  height: auto;
   padding: 20px 0px 0px 0px;
 }
 @media (max-width: 500px) {
@@ -275,8 +273,8 @@ body {
 }
 .container .lower .history {
   width: 48%;
-  height: 50%;
-  font-size: 3em;
+  height: auto;
+  font-size: 2em;
   font-family: snell;
   background-color: #e5e5e5;
   padding: 3rem;
@@ -286,14 +284,16 @@ body {
     width: 100%;
   }
 }
+.container .lower .history span {
+  font-style: italic;
+}
 .container .lower .contact {
   width: 48%;
-  height: 50%;
-  font-size: 3em;
+  height: auto;
+  font-size: 2em;
   font-family: snell;
   background-color: #e5e5e5;
   padding: 3rem;
-  height: auto;
 }
 @media (max-width: 500px) {
   .container .lower .contact {
