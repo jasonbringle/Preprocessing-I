@@ -1,1 +1,307 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.container {
+  margin: 2em;
+  padding: 2em;
+}
+.container .boxes-dim {
+  width: 48%;
+  height: auto;
+  font-size: 2em;
+  font-family: snell;
+}
+@media (max-width: 500px) {
+  .container .boxes-dim {
+    width: 100%;
+  }
+}
+.container .box-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.container header {
+  background-color: lightblue;
+}
+.container header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container header nav a {
+  text-decoration: none;
+  color: Black;
+  font-size: 2rem;
+  padding: 0px 10px 0px 0px;
+  font-family: helvetica;
+}
+@media (max-width: 500px) {
+  .container header nav a {
+    border-top: 1px solid black;
+    width: 100%;
+    text-align: center;
+  }
+}
+.container h2 {
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+.container .big-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 50rem;
+  padding: 3rem;
+}
+.container .big-box img {
+  height: auto;
+  width: 40%;
+}
+.container .big-box h1 {
+  font-size: 4rem;
+  font-family: sans-serif;
+}
+@media (max-width: 500px) {
+  .container .big-box h1 {
+    font-size: 3rem;
+  }
+}
+.container .big-box p {
+  font-size: 2rem;
+}
+.container .big-box button {
+  width: 100px;
+  height: 40px;
+  background-color: gray;
+}
+.container .big-box button:hover {
+  text-decoration: underline;
+  color: red;
+}
+.container .middle {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container .middle {
+    flex-direction: column;
+  }
+}
+.container .intro {
+  width: 48%;
+  height: auto;
+  font-size: 2em;
+  font-family: snell;
+  background-color: #e5e5e5;
+  padding: 3rem;
+  margin: 20px 0px 0px 0px;
+}
+@media (max-width: 500px) {
+  .container .intro {
+    width: 100%;
+  }
+}
+.container .list {
+  width: 48%;
+  height: auto;
+  font-size: 2em;
+  font-family: snell;
+  background-color: #e5e5e5;
+  padding: 3rem;
+  margin: 20px 0px 0px 0px;
+}
+@media (max-width: 500px) {
+  .container .list {
+    width: 100%;
+  }
+}
+.container ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.container .lower {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 0px 0px;
+}
+@media (max-width: 500px) {
+  .container .lower {
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+}
+.container .lower .history {
+  width: 48%;
+  height: auto;
+  font-size: 2em;
+  font-family: snell;
+  background-color: #e5e5e5;
+  padding: 3rem;
+}
+@media (max-width: 500px) {
+  .container .lower .history {
+    width: 100%;
+  }
+}
+.container .lower .history span {
+  font-style: italic;
+}
+.container .lower .contact {
+  width: 48%;
+  height: auto;
+  font-size: 2em;
+  font-family: snell;
+  background-color: #e5e5e5;
+  padding: 3rem;
+}
+@media (max-width: 500px) {
+  .container .lower .contact {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container .lower .contact {
+    margin: 20px 0px 0px 0px;
+  }
+}
